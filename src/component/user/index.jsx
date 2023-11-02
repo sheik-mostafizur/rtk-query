@@ -1,4 +1,4 @@
-import {useGetUsersQuery} from "../../redux/api/createApi";
+import {useGetUsersQuery} from "../../redux/api/fakeDataApi";
 
 function UserList() {
   const {data, error, isLoading} = useGetUsersQuery();

@@ -1,4 +1,4 @@
-import {useGetPostsQuery} from "../../redux/api/createApi";
+import {useGetPostsQuery} from "../../redux/api/fakeDataApi";
 
 function PostList() {
   const {data, error, isLoading} = useGetPostsQuery();

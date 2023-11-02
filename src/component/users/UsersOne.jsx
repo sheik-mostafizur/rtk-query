@@ -1,4 +1,4 @@
-import {useGetUsersQuery} from "../../redux/api/createApi";
+import {useGetUsersQuery} from "../../redux/api/fakeDataApi";
 
 function UsersOne() {
   const {data, error, isLoading} = useGetUsersQuery();
