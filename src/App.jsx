@@ -7,6 +7,7 @@ import PostsThree from "./component/posts/PostsThree";
 import UsersOne from "./component/users/UsersOne";
 import UsersTwo from "./component/users/UsersTwo";
 import UsersThree from "./component/users/UsersThree";
+import UsersPosts from "./component/users-posts";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <BrowserRouter>
         <nav style={{display: "flex", alignItems: "center", gap: "1rem"}}>
           <Link to={"/"}>Home</Link>
+          <Link to={"/users-posts"}>UsersPosts</Link>
           <Link to={"/posts"}>posts</Link>
           <Link to={"/post-one"}>posts one</Link>
           <Link to={"/post-two"}>posts two</Link>
@@ -26,6 +28,7 @@ function App() {
         </nav>
         <Routes>
           <Route path="/" element={<>Home Page</>} />
+          <Route path="/users-posts" element={<UsersPosts />} />
           <Route path="/posts" element={<PostList />} />
           <Route path="/post-one" element={<PostsOne />} />
           <Route path="/post-two" element={<PostsTwo />} />
